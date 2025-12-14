@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange Radar - Conversor de Moedas</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>💱 Exchange Radar</h1>
+    <p>Conversão de moedas em tempo real</p>
+  </header>
+
+  <main class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Cotações</h2>
+
+      <div class="cotacao">
+        <span>USD</span>
+        <div class="valor">
+          <strong id="usd-brl">--</strong>
+          <span id="usd-var" class="variacao"></span>
+        </div>
+      </div>
+
+      <div class="cotacao">
+        <span>EUR</span>
+        <div class="valor">
+          <strong id="eur-brl">--</strong>
+          <span id="eur-var" class="variacao"></span>
+        </div>
+      </div>
+
+      <div class="cotacao">
+        <span>GBP</span>
+        <div class="valor">
+          <strong id="gbp-brl">--</strong>
+          <span id="gbp-var" class="variacao"></span>
+        </div>
+      </div>
+
+      <div class="cotacao">
+        <span>BTC</span>
+        <div class="valor">
+          <strong id="btc-brl">--</strong>
+          <span id="btc-var" class="variacao"></span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Conversor -->
+    <div class="card">
+
+      <label for="valor">Valor</label>
+      <input type="number" id="valor" placeholder="Ex: 100">
+
+      <!-- Origem -->
+      <div class="campo moeda">
+        <img id="icone-origem" src="assets/icons/real.svg" class="icone-moeda" alt="Origem">
+
+        <div class="grupo-select">
+          <label>De</label>
+          <select id="moeda-origem" class="select-estiloso">
+            <option value="BRL">Real (BRL)</option>
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="BTC">Bitcoin (BTC)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Destino -->
+      <div class="campo moeda">
+        <img id="icone-destino" src="assets/icons/dollar.svg" class="icone-moeda" alt="Destino">
+
+        <div class="grupo-select">
+          <label>Para</label>
+          <select id="moeda-destino" class="select-estiloso">
+            <option value="USD">Dólar (USD)</option>
+            <option value="BRL">Real (BRL)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="BTC">Bitcoin (BTC)</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="converter">Converter</button>
+
+      <div id="resultado" class="resultado-card oculto">
+        <p id="resultado-texto"></p>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

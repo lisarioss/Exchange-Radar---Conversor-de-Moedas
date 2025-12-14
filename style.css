@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c9c9c9;
+}
+
+header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start; /* IMPORTANTE */
+}
+
+.container {
+  margin-top: 16px;
+}
+
+
+header {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+header h1 {
+  font-size: 45px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #292929; /* azul bem escuro / quase preto */
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+header p {
+  font-size: 18px;
+  color: #565758; /* cinza elegante */
+  font-weight: 500;
+}
+
+.card {
+    background: rgb(247, 244, 244);
+    justify-content: center;
+    padding: 25px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 4px 15px #ffffff20;
+}
+
+label {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 15px 0;
+    border-radius: 8px;
+    border: 1px solid #706f6f;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #212529;
+    border: none;
+    color: rgb(240, 240, 240);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #666666;
+}
+
+/* Campo com ícone */
+.campo.moeda {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 15px 0;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    border: 1px solid #8a8888;
+}
+
+/* Hover */
+.campo.moeda {
+    display: flex;
+    align-items: center; /* MUITO IMPORTANTE */
+    gap: 12px;
+}
+
+/* Icones */
+.icone-moeda {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+
+  object-fit: contain;
+  display: inline-block;
+}
+
+
+/* Select estiloso */
+.select-estiloso {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    font-size: 16px;
+    font-weight: bold;
+    background: white;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 150px;
+}
+
+/* Foco do select */
+.select-estiloso:focus {
+    border-color: #030303;
+    box-shadow: 0px 0px 4px #3d4f64;
+    outline: none;
+}
+
+/* Resultado */
+.resultado {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Card de resultado */
+.resultado-card {
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000025;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+}
+
+/* Quando aparecer */
+.resultado-card.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.resultado-card p {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Valor pequeno acima */
+.resultado-card span {
+    font-size: 14px;
+    color: #ece7e7;
+}
+
+/* Oculta antes de mostrar */
+.oculto {
+    display: none;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 8px; /* controle de subir e descer */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px #00000020;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Item da cotação */
+.cotacao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #eee;
+}
+
+.cotacao span {
+    font-weight: bold;
+}
+
+.cotacao strong {
+    color: #0077ff;
+}
+
+.valor {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.variacao {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* subiu */
+.subiu {
+    color: #16a34a; /* verde */
+}
+
+/* caiu */
+.caiu {
+    color: #dc2626; /* vermelho */
+}
+
+img {
+    image-rendering: -webkit-optimize-contrast;
+}
