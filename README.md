@@ -68,6 +68,7 @@ exchange-radar/
 ├── pound.svg
 └── bitcoin.svg
 
+
 ---
 
 ## 🎯 Objetivo do Projeto
