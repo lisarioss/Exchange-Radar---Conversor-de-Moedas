@@ -68,7 +68,6 @@ exchange-radar/
 ├── pound.svg
 └── bitcoin.svg
 
-
 ---
 
 ## 🎯 Objetivo do Projeto
@@ -77,12 +76,6 @@ Este projeto foi desenvolvido com foco em:
 - Prática real de consumo de APIs
 - Organização de código front-end
 - Criação de um projeto de portfólio com valor para recrutadores
-
----
-
-## 📸 Preview
-
-_(adicione aqui uma screenshot do projeto rodando)_
 
 ---
 
